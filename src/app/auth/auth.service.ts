@@ -22,8 +22,8 @@ export class AuthService {
   private clientID = environment.clientID
   private clientSecret = environment.clientSecret
 
-  private authUrl = "https://proxy-app.cfapps.ap21.hana.ondemand.com/auth"
-  private registerUrl = "https://proxy-app.cfapps.ap21.hana.ondemand.com/api/iasusers"
+  private authUrl = "https://proxy-server-app.cfapps.us10-001.hana.ondemand.com/auth"
+  private registerUrl = "https://proxy-server-app.cfapps.us10-001.hana.ondemand.com/api/iasusers"
 
 
   loggedInUser = new BehaviorSubject<AuthUser | null>(null);

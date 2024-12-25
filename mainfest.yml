@@ -1,6 +1,6 @@
 applications:
-  - name: sd-app
+  - name: sd-main-app
     buildpack: staticfile_buildpack
     memory: 1000MB
     instances: 1
-    path: dist/btp-sd-app
+    path: dist/btp-app-main

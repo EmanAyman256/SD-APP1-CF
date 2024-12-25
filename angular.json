@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/btp-sd-app",
+            "outputPath": "dist/btp-app-main",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
