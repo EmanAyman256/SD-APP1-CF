@@ -1,5 +1,5 @@
 applications:
-  - name: sd-main-app
+  - name: main-app
     buildpack: staticfile_buildpack
     memory: 512MB
     instances: 1
