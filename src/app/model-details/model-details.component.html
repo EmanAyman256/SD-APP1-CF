@@ -106,13 +106,13 @@
                     <ng-template pTemplate="input">
                         <p-dropdown [options]="recordsServiceNumber" [(ngModel)]="record.serviceNumberCode"
                             [ngModelOptions]="{standalone: true}" optionValue="serviceNumberCode"
-                            optionLabel="description" [filter]="true" [filterFields]="['searchTerm','description']"
+                            optionLabel="description" [filter]="true" [filterFields]="['serviceNumberCode','description']"
                             [showClear]="true" placeholder="Select SeviceNumber" [appendTo]="'body'"
                             (onChange)="onServiceNumberUpdateChange($event)"
                              [virtualScroll]="true" [virtualScrollItemSize]="40">
                             <ng-template let-record pTemplate="item">
                                 <div class="flex align-items-center gap-2">
-                                    <div>{{ record.searchTerm }}::{{ record.description }}</div>
+                                    <div>{{ record.serviceNumberCode }}::{{ record.description }}</div>
                                 </div>
                             </ng-template>
                         </p-dropdown>
@@ -502,12 +502,12 @@
             <td>
                 <p-dropdown [options]="recordsServiceNumber" [(ngModel)]="selectedServiceNumber"
                     [ngModelOptions]="{standalone: true}" optionValue="serviceNumberCode" optionLabel="description"
-                    [filter]="true" [filterFields]="['searchTerm','description']" [showClear]="true"
+                    [filter]="true" [filterFields]="['serviceNumberCode','description']" [showClear]="true"
                     placeholder="Select SeviceNumber" (onChange)="onServiceNumberChange($event)"
                      [appendTo]="'body'"  [virtualScroll]="true" [virtualScrollItemSize]="40">
                     <ng-template let-record pTemplate="item">
                         <div class="flex align-items-center gap-2">
-                            <div>{{ record.searchTerm }}::{{ record.description }}</div>
+                            <div>{{ record.serviceNumberCode }}::{{ record.description }}</div>
                         </div>
                     </ng-template>
                 </p-dropdown>

@@ -77,10 +77,15 @@ export class ModelDetailsComponent {
       });
     }
     this.apiService.get<ServiceMaster[]>('servicenumbers').subscribe(response => {
-      this.recordsServiceNumber = response.filter(record => record.deletionIndicator === false);
+      this.recordsServiceNumber = response
+      console.log(this.recordsServiceNumber);
+      
+      // .filter(record => record.deletionIndicator === false);
     });
     this.apiService.get<UnitOfMeasure[]>('measurements').subscribe(response => {
       this.recordsUnitOfMeasure = response;
+      console.log(this.recordsUnitOfMeasure);
+      
     });
     this.apiService.get<ServiceType[]>('servicetypes').subscribe(response => {
       this.recordsServiceType = response;
